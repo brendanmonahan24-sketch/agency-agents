@@ -33,9 +33,12 @@ export function Hero() {
         </div>
 
         <div className="md:col-span-4 flex md:justify-end items-start">
-          <div className="border hairline p-6 md:p-8 w-full max-w-sm bg-[color:var(--color-paper-2)]">
+          <div className="border hairline p-5 md:p-8 w-full max-w-sm bg-[color:var(--color-paper-2)]">
             <SectionEyebrow label="Sample artifact" />
-            <pre className="mono mt-4 text-[0.78rem] leading-6 overflow-x-auto whitespace-pre">
+            <pre
+              className="mono mt-4 leading-6 overflow-x-auto whitespace-pre"
+              style={{ fontSize: "clamp(0.7rem, 3.2vw, 0.78rem)" }}
+            >
 {`Concept ⟶ Document
 ├── Statute
 │   ├── Federal

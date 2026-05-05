@@ -92,10 +92,12 @@ export default function HomePage() {
                 {cases.map((c) => (
                   <li
                     key={c.id}
-                    className="border-t hairline pt-6 grid grid-cols-12 gap-6"
+                    className="border-t hairline pt-6 grid grid-cols-12 gap-x-4 gap-y-3"
                   >
-                    <div className="col-span-2 mono">{c.number}</div>
-                    <div className="col-span-7">
+                    <div className="col-span-2 sm:col-span-2 mono">
+                      {c.number}
+                    </div>
+                    <div className="col-span-10 sm:col-span-7">
                       <h3
                         className="display-sm"
                         style={{ fontSize: "1.3rem" }}
@@ -104,7 +106,7 @@ export default function HomePage() {
                       </h3>
                       <p className="body-muted mt-2">{c.sector}</p>
                     </div>
-                    <div className="col-span-3 text-right">
+                    <div className="col-start-3 col-span-10 sm:col-start-auto sm:col-span-3 sm:text-right">
                       <span
                         className="display"
                         style={{

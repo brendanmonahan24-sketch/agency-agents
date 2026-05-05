@@ -48,7 +48,12 @@ export function Footer() {
       </div>
 
       <div className="border-t hairline">
-        <div className="container-x py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+        <div
+          className="container-x py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3"
+          style={{
+            paddingBottom: "max(1.5rem, env(safe-area-inset-bottom))",
+          }}
+        >
           <span className="mono">
             © {year} {brand.name} Studio LLC
           </span>
