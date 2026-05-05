@@ -38,7 +38,7 @@ The site lives in a subdirectory of the repo, so the only non-default
 setting at import time is the **Root Directory**.
 
 1. Go to https://vercel.com/new and import
-   `brendanmonahan24-sketch/agency-agents`.
+   `brendanmonahan24-sketch/agency-agents-claude1`.
 2. Under **Configure Project**, set **Root Directory** to `site`.
    (Click "Edit" next to Root Directory and pick the `site` folder.)
 3. Leave Framework (Next.js), Build Command, and Output Directory at
